@@ -23,6 +23,9 @@ items = soup.find_all('item')
 #input(items[0])  -----> gives us the first item in the seacrh menu 
 
 for item in items:
+    
+  
+
     cat = item.categoryname.string.lower()
     title = item.title.string.lower()
     price = int(round(float(item.currentprice.string)))
@@ -33,4 +36,5 @@ for item in items:
     print('title:\n' + title + '\n')
     print('price:\n' + str(price) + '\n')
     print('url:\n' + url + '\n')
- 
+
+    input()
